@@ -1,0 +1,35 @@
+console.log() - to print anything on console
+.replace()- to replace any word in a string
+.toUpperCase() - to convert all characters into uppercase
+.toLowerCase() - to convert all characters into lo wercase
+.trim() - removes every blank spaces from start and end of a sentence.
+charAt() - returns the characters from the given position 
+.length()- returns the length of a string
+.alert() 
+confirm()- to make confirmation from the browser
+foreach() - to target each ement in array
+
+events:
+click
+contextmenu
+mouseover/mouseout
+mousedown/mouseup
+mousemove
+submit
+focus
+DOMcontentloaded
+
+setTimeout() -- load a function after a spcific period of time
+setInterval - load a spcific function repetivily after a sprcific time
+.date() -- prints the current date and time
+.getDate/month/year/second()-- gives the currents date/month/year etc
+math.round() - round of a value
+math.pow() - peforms square etc like function
+math.ceil() - round of the value to nearest greatest integer
+math.floor() - rounf of the value of nearest lowest integer
+math.abs() - convert neg int to positive
+require - to import different modules from node
+.readFileSync() -  to read content ot a file which should be placed in same directory of the js file
+.writeFileSync() -  to create a new file in the same directory
+.readFile() - works same as readFileSync() but requires a function with err and data as parameters
+

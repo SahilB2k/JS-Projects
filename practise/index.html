@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <h3 id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio, aliquid provident totam, fuga enim sit iure accusamus ullam eius earum necessitatibus. Quia, provident hic dignissimos ab magnam porro. Accusantium distinctio error quis aliquid dolore ratione rerum sed consectetur, nostrum architecto et dolor repellendus ducimus, sint non repudiandae dolores illum hic magni iusto. Quas porro accusamus harum, soluta laudantium quasi.
+    </h3>
+    <button id="btn" on="toggle()" type="button">CLICK ME</button>
+    <button id="btn" onclick="DATE()" type="button">Display Date</button>
+    <button id="btn" onclick="month()" type="button">Display month</button>
+    <div id="dt"></div>
+    <script>
+    //   function toggle(){
+    //     let btn=document.getElementById('btn')
+    //     let para=document.getElementById('para')
+    //     // btn.addEventListener('click',confirm("do you want to save your data")
+
+    //     if(para.style.display!='none'){
+    //         para.style.display='none'
+    //     }else{
+    //         para.style.display='block'
+    //     }
+    // }
+
+    // function greet(name){
+    //     alert(`"Hello" ${name}`)
+    // }
+    // setTimeout(greet,3000,"SAHIL")
+    // let date = new Date()
+    // console.log(date)
+    // setInterval(greet ,2000,"Haary")
+    // let yr = date.getFullYear();
+    // console.log(yr)
+
+    let date = new Date()
+    function DATE(){
+    //  alert(date)
+     dt.innerHTML = date
+    }
+    function month(){
+        dt.innerHTML = date.getDate()
+    }
+    // </script>
+</body>
+</html>

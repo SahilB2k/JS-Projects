@@ -1,0 +1,29 @@
+[
+    {
+        "name":"Sahil",
+        "Species":"human",
+        "foods":{
+            "likes":["vadapav","anaanti"],
+            "dislikes":["shimlamirch","cabbage"]
+
+        }
+    },
+    {
+        "name":"anuj",
+        "Species":"elephant",
+        "foods":{
+            "likes":["balaji","paneer"],
+            "dislikes":["shimlamirch","tomato"]
+
+        } 
+    },
+    {
+        "name":"anaanti",
+        "Species":"human",
+        "foods":{
+            "likes":["vadapav","sahil"],
+            "dislikes":["shimlamirch","cabbage"]
+
+        }
+    }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px;
+            font-size: 15px;
+            color: white;
+            background-color: rgb(5, 54, 5);
+            width: 300px;
+            margin: 10px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="">Click Any of the Buttons:</label>
+    <button id="btn">Show Food items for Happy</button>
+    <div id="jsonContent" ></div>
+    <script>
+        var btn = document.getElementById('btn')
+        var text = document.getElementById('text')
+        btn.addEventListener('click', function () {
+            var ourRequest = new XMLHttpRequest();
+
+            ourRequest.open('GET', "data.json");
+            ourRequest.onload = function () {
+                var ourData = JSON.parse(ourRequest.responseText)
+               var jsonString = JSON.stringify(ourData,null,2)
+               jsonContent.textContent=jsonString;
+                console.log(ourData[0])
+                // console.log(ourRequest.responseText);
+            }
+            ourRequest.send();
+        })
+        // function renderHTML(data){
+        //     text.insertAdjacentHTML('beforeend','texting123')
+        // }
+
+
+    </script>
+</body>
+
+</html>
