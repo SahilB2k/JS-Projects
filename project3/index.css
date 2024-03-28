@@ -56,8 +56,21 @@ img{
     margin: 20px 0;
     outline: none;
     border-radius: 5px ;
+    cursor: text;
+}
+.input-box img{
+    width: 35px;
+    height: 26px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: block;
 }
 
+p{
+    text-align: left;
+}
 p button{
     width: 25px;
     position: absolute;
