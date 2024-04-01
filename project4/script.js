@@ -52,7 +52,7 @@ function deleteNote(index) {
     notesObj = JSON.parse(notes);
   }
 
-  console.log("Deleting note at index:", index);
+  // console.log("Deleting note at index:", index);
   notesObj.splice(index, 1); // Remove the note at the specified index
 
   localStorage.setItem("notes", JSON.stringify(notesObj));
@@ -63,7 +63,7 @@ function deleteNote(index) {
 let search = document.getElementById('searchTxt')
 search.addEventListener('input',function(){
   let inputVal = search.value;
-  console.log(inputVal)
+  // console.log(inputVal)
   let noteCard =document.getElementsByClassName('noteCard')
   Array.from(noteCard).forEach(function(element){
     let cardTxt = element.getElementsByTagName("p")[0].innerText
@@ -76,3 +76,20 @@ search.addEventListener('input',function(){
 
   })
 })
+let chg1 =document.getElementsByTagName('hr')
+let chg = document.getElementsByTagName('h1')
+var dark=document.getElementById('dark')
+
+dark.addEventListener('click',function(){
+document.body.style.backgroundColor='#1d2034'
+for (var i = 0; i < chg.length; i++) {
+  chg[i].style.color = 'white';
+}
+for (var i = 0; i < chg1.length; i++) {
+  chg1[i].style.backgroundColor = 'white';
+}})
+dark.addEventListener('dblclick',function(){
+document.body.style.backgroundColor='white'
+for (var i = 0; i < chg.length; i++) {
+  chg[i].style.color = 'black';
+}})
